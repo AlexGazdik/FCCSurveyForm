@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+.main {
+    color: blanchedalmond;
+    background-color: black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.input-frame {
+    border-width: 3px;
+    border-color: aliceblue;
+   
+}

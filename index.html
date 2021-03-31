@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    <script src="main.js"></script>
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class='main'>
+    <h1 id='title'>Survey Form</h1>
+    <p id = "description">This is a form for a survey. Fill it the out.</p>
+    <form id='survey-form'>
+        <label id="name-label">Name</label>
+        <br>
+            <input class= 'input-frame' type="text" id='name' placeholder="Enter your name" required=''><br>
+        <br>
+        <label id="email-label">Email</label>
+        <br>
+            <input class='input-frame' type="email" id='email' placeholder="Enter your email" required=''><br>
+        <br>
+        <label id="number-label">Age</label>
+        <br>
+        <input class='input-frame' type="number" id="number" min="10" max="99"  placeholder="Age" requird=''><br>
+        <br>
+        <label>How many are in your household</label>
+        <br>
+        <select id='dropdown' class="input-frame" required=''>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select><br>
+        <div name = "this">
+        <label> Which is better?</label><br>
+        <br>
+        <label>
+        <input type='radio' name='this' value='this'>
+        this
+        </label>
+        <label>
+        <input type='radio' name='this' value="that">
+        that
+        </label>
+        <label>
+        <input type='radio' name='this' value="the other">
+        the other
+        </label>
+    </div>   
+        <p>What country so you reside in?</p>
+        <label>
+        <input name="checks" value="United States" type="checkbox" class="input-checkbox" value="united states">
+        United States
+        </label>
+        <label>
+        <input name="checks" value="Mexico" type="checkbox" class="input-checkbox" value="mexico">
+        Mexico    
+        </label>
+        <label>
+        <input name="checks" value="Canada" type="checkbox" class="input-checkbox" value="canada">
+        Canada
+        </label>
+        <br>
+        <br>
+        Please tell us how you really feel<br>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea><br>
+        <br>
+        <button id='submit' type="submit">
+            Submit
+          </button>
+        </form>
+
+        
+</form>
+</div>
+</body>
+</html>
